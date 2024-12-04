@@ -1,0 +1,92 @@
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+@font-face {
+  font-family: "Benton Sans";
+  src: url("/assets/fonts/BentonSans-Regular.woff2") format("woff2"),
+    url("/assets/fonts/BentonSans-Regular.woff") format("woff"),
+    url("/assets/fonts/BentonSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Benton Sans";
+  src: url("/assets/fonts/BentonSans-Medium.woff2") format("woff2"),
+    url("/assets/fonts/BentonSans-Medium.woff") format("woff"),
+    url("/assets/fonts/BentonSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+.text-white h1 {
+  display: flex;
+  height: 11rem; /* Adjusted height to fit larger text */
+  overflow: hidden;
+  position: relative;
+}
+
+.word {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transform: translateY(100%); /* Start below the container */
+  animation: slide 6s infinite;
+}
+
+.word:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 2s; /* Starts after the first word */
+}
+
+.word:nth-child(3) {
+  animation-delay: 4s; /* Starts after the second word */
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(100%); /* Word starts from below */
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0); /* Word slides to normal position */
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(0); /* Word stays in place */
+  }
+  40% {
+    opacity: 0;
+    transform: translateY(-100%); /* Word slides up and disappears */
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%); /* Ensure it's completely off-screen */
+  }
+}
+
+.video-background {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+}
