@@ -24,7 +24,7 @@ const Banner = () => {
                     {/* Header */}
                     <div className="absolute top-0 w-full  flex justify-between items-center px-5 lg:px-16 h-[89.6px]">
                         <div className="md:w-1/3 ">
-                            <div className=" lg:bg-[#2A2523] md:w-1/3 lg:w-1/4 xl:1/5 pt-2">
+                            <div className=" lg:bg-[#2A2523] md:w-1/4 lg:w-1/5 xl:1/6 pt-2">
                                 <img src="/images/icon.png" className=" p-4 pb-2 w-20 h-20" alt="Icon" />
                             </div>
                         </div>
@@ -78,7 +78,7 @@ const Banner = () => {
                     </div>
                 </div>
             ) : (
-                <div className="video-background relative text-[#FFFEF2] ">
+                <div className="video-background relative text-[#FFFEF2] h-[620px] ">
                     <video
                         src="/videos/headerHoverBgVideo.mp4"
                         loop
@@ -86,7 +86,7 @@ const Banner = () => {
                         autoPlay
                         playsInline
                     ></video>
-                    <div className="video-overlay bg-[#231F2080] bg-gradient-to-l from-[#231F20] h-[732px]"></div>
+                    <div className="video-overlay bg-[#231F2080] bg-gradient-to-l from-[#231F20] h-[768px]"></div>
                     <div className="absolute top-0 w-full flex items-center px-16 h-[89.6px]">
                         <div className="w-1/3">
                             <div className="bg-[#2A2523] lg:w-1/5 xl:w-1/6 pt-3">
@@ -155,11 +155,11 @@ const Banner = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex w-full absolute bottom-20 -right-6">
+                            <div className="flex w-full absolute bottom-40 -right-6">
                                 <div className="w-1/3"></div>
                                 <div className="w-[900px] border-b border-white"></div>
                             </div>
-                            <div className="flex absolute -bottom-12 w-full h-20 px-16">
+                            <div className="flex absolute bottom-12 w-full h-20 px-16">
                                 <div className="w-1/3 "></div>
                                 <div className="w-2/3 flex justify-between gap-5">
                                     <div>
