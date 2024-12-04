@@ -1,37 +1,24 @@
 
 const Footer = () => {
+    const colors = [
+        '#F0E7DC', '#FFFCF3', '#EED6CA', '#F4C090', '#D79677',
+        '#F7B960', '#B88276', '#96796E', '#E29792', '#E18E8C',
+        '#E59C8D', '#AC615B', '#9A6362', '#544546', '#BAA489',
+        '#92A997', '#76786D', '#62846B', '#63796D', '#9BC1A6',
+        '#77BAE5', '#7DA3B0', '#3E5984', '#424D59', '#AFA9AA',
+        '#96918E', '#535353', '#F1EBED', '#414047'
+    ];
+
     return (
         <div>
             <div className='h-4 md:h-[352px] relative flex'>
-                <div className='bg-[#F0E7DC] w-[45.75px] h-full'></div>
-                <div className='bg-[#FFFCF3] w-[45.75px] h-full'></div>
-                <div className='bg-[#EED6CA] w-[45.75px] h-full'></div>
-                <div className='bg-[#F4C090] w-[45.75px] h-full'></div>
-                <div className='bg-[#D79677] w-[45.75px] h-full'></div>
-                <div className='bg-[#F7B960] w-[45.75px] h-full'></div>
-                <div className='bg-[#B88276] w-[45.75px] h-full'></div>
-                <div className='bg-[#96796E] w-[45.75px] h-full'></div>
-                <div className='bg-[#E29792] w-[45.75px] h-full'></div>
-                <div className='bg-[#E18E8C] w-[45.75px] h-full'></div>
-                <div className='bg-[#E59C8D] w-[45.75px] h-full'></div>
-                <div className='bg-[#AC615B] w-[45.75px] h-full'></div>
-                <div className='bg-[#9A6362] w-[45.75px] h-full'></div>
-                <div className='bg-[#544546] w-[45.75px] h-full'></div>
-                <div className='bg-[#BAA489] w-[45.75px] h-full'></div>
-                <div className='bg-[#92A997] w-[45.75px] h-full'></div>
-                <div className='bg-[#76786D] w-[45.75px] h-full'></div>
-                <div className='bg-[#62846B] w-[45.75px] h-full'></div>
-                <div className='bg-[#63796D] w-[45.75px] h-full'></div>
-                <div className='bg-[#9BC1A6] w-[45.75px] h-full'></div>
-                <div className='bg-[#77BAE5] w-[45.75px] h-full'></div>
-                <div className='bg-[#7DA3B0] w-[45.75px] h-full'></div>
-                <div className='bg-[#3E5984] w-[45.75px] h-full'></div>
-                <div className='bg-[#424D59] w-[45.75px] h-full'></div>
-                <div className='bg-[#AFA9AA] w-[45.75px] h-full'></div>
-                <div className='bg-[#96918E] w-[45.75px] h-full'></div>
-                <div className='bg-[#535353] w-[45.75px] h-full'></div>
-                <div className='bg-[#F1EBED] w-[45.75px] h-full'></div>
-                <div className='bg-[#414047] w-[45.75px] h-full'></div>
+                {colors.map((item, index) => (
+                    <div
+                        key={index}
+                        className={`flex-1 h-full bg-[${item}]`} style={{ width: `${100 / 29}%` }} // Adjust width dynamically
+                    >
+                    </div>
+                ))}
                 <div className="hidden md:flex absolute bg-[#2A2523] bottom-0 lg:left-20">
                     <img src="/images/icon.png" className="p-3" alt="" />
                 </div>
