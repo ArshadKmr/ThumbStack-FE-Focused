@@ -9,7 +9,7 @@ import Group5 from './components/group/Group5'
 import ManufacturingProcess from './components/group/ManufacturingProcess'
 import Products from './components/group/Products'
 import WorkBench from './components/group/WorkBench'
-import Introduction from './components/introduction/introduction'
+import Introduction from './components/introduction/Introduction'
 
 function App() {
 
