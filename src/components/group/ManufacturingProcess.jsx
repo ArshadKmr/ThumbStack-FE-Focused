@@ -86,7 +86,7 @@ const ManufacturingProcess = () => {
                                 <img src="/images/scrollImage1.png" className="2xl:w-[705px] xl:w-[600px] lg:w-[510px] md:w-[440px] w-[350px]" alt="" />
                             </div>
                         </div>
-                        <div className="flex  left-[90px] w-[75%] bg-[#2A2523] gap-20 pb-20 sticky top-[1px] z-10">
+                        <div className="flex  left-[90px] w-[75%] bg-[#2A2523] gap-20 pb-20 sticky top-[0px] z-10">
                             <div className="w-1/2 border-t border-[#8FDEAA] relative">
                                 <div className="absolute w-[22.25%] border-2 border-[#8FDEAA]"></div>
                                 <div className=" absolute top-10 text-[#8FDEAA]">
