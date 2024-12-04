@@ -15,7 +15,7 @@ const Footer = () => {
                 {colors.map((item, index) => (
                     <div
                         key={index}
-                        className={`flex-1 h-full bg-[${item}]`} style={{ width: `${100 / 29}%` }} // Adjust width dynamically
+                        className={`flex-1 h-full bg-[${item}]`} style={{ width: `${100 / 29}%` ,backgroundColor:`${item}`}} // Adjust width dynamically
                     >
                     </div>
                 ))}
