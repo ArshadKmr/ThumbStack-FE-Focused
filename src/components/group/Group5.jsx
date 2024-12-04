@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa6"
 
 const Group5 = () => {
     return (
-        <div className=" top-0 z-50 relative">
+        <div className=" top-0 z-50 relative bg-[#2A2523]">
             <img src="/images/bigImage.png" className="hidden md:flex h-screen w-screen " alt="" />
             <img src="/images/bigImage2.png" alt="" className="flex md:hidden w-full" />
             <div className="flex items-center gap-3 absolute bottom-5 left-3 md:bottom-10 md:left-7 lg:bottom-12 lg:left-10 xl:bottom-15 xl:left-13  text-[#FFFEF2]">
